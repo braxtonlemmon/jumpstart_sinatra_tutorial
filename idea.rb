@@ -8,6 +8,12 @@ class Idea
 		@description = description
 	end
 
+	def self.delete(position)
+		database.transaction do
+			database['ideas'].delete_at(position)
+		end
+	end
+	
 	def self.raw_ideas
 		raw_ideas = database.transaction do |db|
 			db['ideas'] || []
