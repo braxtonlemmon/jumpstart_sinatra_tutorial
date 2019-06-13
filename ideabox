@@ -1,6 +1,7 @@
 ---
 ideas:
-- :title: buy dani chocolate
-  :description: eat cake
-- :title: Wash
-  :description: The red car
+- !ruby/hash:Sinatra::IndifferentHash
+  title: Rah
+  description: rah rah rah
+- title: Hmm
+  description: hm hm
